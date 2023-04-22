@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <title>Frontend Mentor | Todo app</title>
+  </head>
+  <body>
+    <div class="overlay">
+      <img class="active" src="images/bg-desktop-light.jpg" alt="" />
+      <!-- <img src="images/bg-desktop-dark.jpg" alt="" /> -->
+    </div>
+    <div class="todo-app">
+      <div class="nav">
+        <div class="nav-head">TODO</div>
+        <div class="day-night">
+          <img src="images/icon-sun.svg" alt="" />
+          <img class="active" src="images/icon-moon.svg" alt="" />
+        </div>
+      </div>
+      <div class="in-todo">
+        <span class="rad"></span>
+        <input type="text" placeholder="Create a new todo..." />
+        <span class="add">+</span>
+      </div>
+      <div class="items">
+        <div class="no-item">No todo items left!</div>
+        <ul>
+          <!-- <li>
+            <div class="task">
+              <span class="rad"></span> <span class="todo">koko</span>
+            </div>
+            <img class="cross" src="images/icon-cross.svg" alt="" />
+          </li> -->
+        </ul>
+        <div class="stistics">
+          <div class="left-items">
+            <span class="items-counter"></span>
+            <span>items left</span>
+          </div>
+          <div class="status">
+            <div class="all selected">All</div>
+            <div class="active-tasks">Active</div>
+            <div class="completed">Completed</div>
+          </div>
+          <div class="clear">clear completed</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add dynamic number
+    items left All Active Completed Clear Completed Drag and drop to reorder
+    list -->
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
